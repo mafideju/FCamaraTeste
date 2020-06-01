@@ -1,0 +1,17 @@
+.card__container:hover {
+    box-shadow: 5px 10px 20px red inset;
+    border-radius: 10%;
+}
+
+.card__main--link:hover {
+    text-decoration: none;
+}
+
+.card__main--image {
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+.card__header {
+    color: #555555;
+}
