@@ -1,6 +1,7 @@
 /* eslint-disable array-callback-return */
 import React, { Component } from 'react';
 import Axios from 'axios';
+import './PokemonService.css';
 
 class PokemonService extends Component {
   state = {
@@ -148,8 +149,8 @@ class PokemonService extends Component {
                       key={type}
                       className="badge badge-pill mr-1 text-capitalize p-2 mt-1"
                       style={{
-                        color: 'white',
-                        backgroundColor: 'black'
+                        color: 'black',
+                        backgroundColor: 'white'
                       }}
                     >
                       {type}

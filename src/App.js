@@ -6,7 +6,7 @@ import './App.css';
 
 import NavBar from './containers/NavBar';
 import Dashboard from './containers/Dashboard';
-import PokemonService from './components/PokemonService';
+import PokemonService from './components/PokemonService/PokemonService';
 
 class App extends Component {
   render() {

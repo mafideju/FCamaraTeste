@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import PokemonCard from './PokemonCard';
-import Loading from '../containers/Loading';
+import PokemonCard from '../PokemonCard/PokemonCard';
+import Loading from '../../containers/Loading';
 
 import axios from 'axios';
 
