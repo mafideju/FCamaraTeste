@@ -67,7 +67,7 @@ class PokemonService extends Component {
     });
 
     const height = pokemonRes.data.height;
-    const weight = pokemonRes.data.weight / 100;
+    const weight = pokemonRes.data.weight;
     const types = pokemonRes.data.types.map(type => type.type.name);
 
     const abilities = pokemonRes.data.abilities
@@ -138,15 +138,15 @@ class PokemonService extends Component {
         <div className="card">
           <div className="card-header">
             <div className="row">
-              <div className="col-5">
-                <h5>Importance: {this.state.pokemonIndex}</h5>
+              <div className="col-5 pt-2">
+                <h5>Order: {this.state.pokemonIndex}</h5>
               </div>
               <div className="col-7">
                 <div className="float-right text-capitalize">
                   {this.state.types.map(type => (
                     <span
                       key={type}
-                      className="badge badge-pill mr-1 text-capitalize"
+                      className="badge badge-pill mr-1 text-capitalize p-2 mt-1"
                       style={{
                         color: 'white',
                         backgroundColor: 'black'
@@ -161,7 +161,7 @@ class PokemonService extends Component {
           </div>
           <div className="card-body">
             <div className="row align-items-center">
-              <div className=" col-md-3 ">
+              <div className="col-md-3">
                 <img
                   src={this.state.imageUrl}
                   alt={this.state.name}
@@ -329,7 +329,7 @@ class PokemonService extends Component {
                     <h6 className="float-right">Weight:</h6>
                   </div>
                   <div className="col-6">
-                    <h6 className="float-left font-weight-bold">{this.state.weight} Kgs</h6>
+                    <h6 className="float-left font-weight-bold">{this.state.weight} Grams</h6>
                   </div>
                   <div className="col-6">
                     <h6 className="float-right">Catch Rate:</h6>
